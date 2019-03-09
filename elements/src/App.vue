@@ -2,7 +2,12 @@
   <div id="app">
     <div class="main">
       <div :class="[introScreen ? 'main-container--intro': '', 'main-container']">
-        <Intro></Intro>
+        <template v-if="introScreen">
+          <Intro></Intro>
+        </template>
+        <template v-else-if="fincherScreen">
+          <FincherScreen></FincherScreen>
+        </template>
       </div>
     </div>
     <div class="sidebar-container">
@@ -14,12 +19,14 @@
 <script>
 import Intro from './components/Intro.vue';
 import Sidebar from './components/Sidebar.vue';
+import FincherScreen from './components/FincherScreen.vue';
 
 export default {
   name: 'app',
   components: {
     Intro,
     Sidebar,
+    FincherScreen
   },
   data() {
     return {
