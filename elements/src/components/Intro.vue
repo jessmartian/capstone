@@ -30,12 +30,12 @@ export default {
     &__title {
       font-family: 'Open Sans', sans-serif;
       position: absolute;
-      left: -2em;
+      left: -3em;
       top: 2em;
       font-size: 48px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.5em;
+      letter-spacing: 1em;
     }
     &__description {
       position: absolute;
@@ -48,7 +48,9 @@ export default {
     }
     &__credit {
       margin-top: 2em;
-      font-size: 18px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
     }
   }
 </style>
