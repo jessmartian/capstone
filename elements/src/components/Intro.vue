@@ -1,6 +1,14 @@
 <template>
-  <div class="hello">
-    Hello World
+  <div class="intro">
+    <div class="intro-box">
+      <div class="intro__title">Elements</div>
+      <div class="intro__description">
+        A showcase of a director’s trademark style through elements of film.
+      </div>
+    </div>
+    <div class="intro__credit">
+      Curated by Jessica Martin
+    </div>
   </div>
 </template>
 
@@ -10,20 +18,37 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  .intro {
+    &-box {
+      display: flex;
+      position: relative;
+      border: 2px solid #FFFFFF;
+      width: 775px;
+      height: 400px;
+    }
+    &__title {
+      font-family: 'Open Sans', sans-serif;
+      position: absolute;
+      left: -2em;
+      top: 2em;
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+    }
+    &__description {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin: 2em;
+      font-size: 16px;
+      width: 20%;
+      text-align: left;
+    }
+    &__credit {
+      margin-top: 2em;
+      font-size: 18px;
+    }
+  }
 </style>

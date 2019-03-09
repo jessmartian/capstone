@@ -45,6 +45,8 @@ export default {
       cursor: pointer;
       padding: 2em 1em;
       border:  1px solid #2B2B31;
+      text-transform: uppercase;
+      font-size: 16px;
       &:hover {
         border:  1px solid #FFFFFF
       }
