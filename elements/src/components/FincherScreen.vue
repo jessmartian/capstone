@@ -10,7 +10,10 @@
       </div>
       <div class="fincher__selected">
         <div class="fincher__selected-screen">
-          Test
+          <video controls
+            class="fincher__selected-screen--video">
+            <source :src="video" type="video/mp4">
+          </video>
         </div>
         <div class="fincher__selected-palette">
           <div v-for="color in selectedPallete.colors"
@@ -39,10 +42,15 @@
 <script>
 export default {
   name: 'FincherScreen',
+  computed: {
+    video() {
+      return this.selectedPallete.video
+    }
+  },
   data() {
     return {
       selectedPallete: {
-        video: 'source of video here',
+        video: '../assets/videos/Fincher/FightClub-Endingscene.mp4',
         colors: [
           '#291F0F',
           '#0E0800',
@@ -54,7 +62,7 @@ export default {
       //TO DO: change all the colours plz
       palettes: [
         {
-          video: 'source of video here',
+          video: '../assets/videos/Fincher/FightClubInsomniascene.mp4',
           colors: [
             '#291F0F',
             '#0k0800',
@@ -119,17 +127,21 @@ export default {
     }
   }
   &__selected {
-    width: 50%;
+    width: 655px;
     display: flex;
     flex-direction: column;
     &-screen {
       background-color: white;
-      height: 80%;
+      height: 95%;
       width: 100%;
+      &--video {
+        width:100%;
+        height:100%;
+      }
     }
     &-palette {
       display: flex;
-      height: 20%;
+      height: 5%;
       width: 100%;
       background-color: black;
       &-color {
