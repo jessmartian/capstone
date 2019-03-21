@@ -8,21 +8,32 @@
         <div class="fincher__description-title">Zodiac</div>
         <div class="fincher__description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a fermentum magna. Suspendisse vitae ligula vitae diam imperdiet finibus. Integer interdum, dolor non pellentesque elementum, nulla mi commodo mauris, id tincidunt lectus dolor sit amet turpis. Donec diam mi, aliquam id vestibulum id, posuere eu tortor.</div>
       </div>
-      <div class="fincher__video">
-        <div class="fincher__video-screen">
+      <div class="fincher__selected">
+        <div class="fincher__selected-screen">
           Test
         </div>
-        <div class="fincher__video-palette">
-          <div v-for="color in palette" 
+        <div class="fincher__selected-palette">
+          <div v-for="color in selectedPallete.colors"
             :key="color"
-            class="fincher__video-palette-color"
+            class="fincher__selected-palette-color"
             :style="{ 'background-color': color }">
           </div>
         </div>
       </div>
     </div>
+    <div class="fincher__palettes">
+      <div class="fincher__palettes-palette"
+        v-for="palette in palettes" 
+        :key="palette.video"
+        @click="selectPalette(palette)">
+        <div class="fincher__palettes-palette-color"
+          v-for="color in palette.colors" 
+          :key="color"
+          :style="{ 'background-color': color }">
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -30,15 +41,47 @@ export default {
   name: 'FincherScreen',
   data() {
     return {
-      palette: [
-        '#291F0F',
-        '#0E0800',
-        '#D7D2C5',
-        '#537C72',
-        '#AA7D47',
+      selectedPallete: {
+        video: 'source of video here',
+        colors: [
+          '#291F0F',
+          '#0E0800',
+          '#D7D2C5',
+          '#537C72',
+          '#AA7D47',
+        ]
+      },
+      //TO DO: change all the colours plz
+      palettes: [
+        {
+          video: 'source of video here',
+          colors: [
+            '#291F0F',
+            '#0k0800',
+            '#D7l2C5',
+            '#538C72',
+            '#AA7D47',
+          ]
+        },
+        {
+          video: 'source of video here1',
+          colors: [
+            '#292F0F',
+            '#0E0900',
+            '#D7F2C5',
+            '#537D72',
+            '#AA7E47',
+          ]
+        },
       ]
+     }
+  },
+  methods: {
+    selectPalette(palette) {
+      this.selectedPallete = palette
+      console.log(palette)
     }
-  }
+  },
 };
 </script>
 
@@ -75,7 +118,7 @@ export default {
       line-height: 2em;
     }
   }
-  &__video {
+  &__selected {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -91,9 +134,27 @@ export default {
       background-color: black;
       &-color {
         width: 20%;
+        }
       }
     }
+  &__palettes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 4em auto;
+    background:#FFFFFF;
+    width: 80%;
+    height: 15%;
+    &-palette {
+      display: flex;
+      height: 50%;
+      width: 25%;
+      background-color: black;
+      cursor: pointer;
+      &-color {
+        width: 20%;
+        }
+      }
   }
-
 }
 </style>
