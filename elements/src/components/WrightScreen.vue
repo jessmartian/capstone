@@ -88,6 +88,7 @@
         background-color:#2B2B31;
         margin-top: -10%;
         box-shadow: 3px 20px 20px rgba(0, 0, 0, 0.3)  
+        background-color: yellow;
     }
     
     .discription {
