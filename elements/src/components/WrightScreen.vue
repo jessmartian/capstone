@@ -1,21 +1,38 @@
 <template>
     <div class="wright">
-        <div class="topbar"> Sound Effects </div>
-            <div class="container">
-                <div class="player">
-                     <div class="player-title">
-                     </div>
-                     <div class="player-image">
-                     </div>
-                 </div>
-                 <div class="discription">
-                     <div class="discription-title">
-                     </div>
-                     <div class="discription-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a fermentum magna. Suspendisse vitae ligula vitae diam imperdiet finibus. Integer interdum, dolor non pellentesque elementum, nulla mi commodo mauris, id tincidunt lectus dolor sit amet turpis. Donec diam mi, aliquam id v estibulum id, posuere eu tortor.</div>
-                 </div>
-             </div>
-    </div>
+    <div class="topbar"> Sound Effects </div>
+    <div class="container">
+        <div class="player-title">
+            <div class="player">
+            <div class="player-image">
+            </div>
+                <div class="player-buttons">
+                        <i class="material-icons">fast_rewind</i>
+                        <i class="material-icons" style="font-size:90px;color:#2B2B31">play_arrow</i>
+                        <i class="material-icons">fast_forward</i>
+                </div>
+            </div>
+        </div>
+        <div class="discription">
+            <div class="discription-title">
+            </div>
+            <div class="discription-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a fermentum magna. Suspendisse vitae ligula vitae diam imperdiet finibus. Integer interdum, dolor non pellentesque elementum, nulla mi commodo mauris, id tincidunt lectus dolor sit amet turpis. Donec diam mi, aliquam id v estibulum id, posuere eu tortor.</div>
+        </div>
+  </div>
+</div>
 </template>
+
+<script>
+    export default {
+        name: 'WrightScreen',
+        data () {
+            return {
+            }
+        },
+        components: {
+        }
+    }
+</script>
 
 <style scoped lang="scss">
     
@@ -28,7 +45,6 @@
         font-size:2em;
         color: white;
         padding:2em 0 0 2em;
-    
     }
     
     .container {
@@ -40,18 +56,6 @@
     }
     
     .player {
-        background-color: #DFDFDF;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin: 7em auto;
-        width: 850px;
-        height: 270px;
-        padding: 10px;
-        
-    }
-    
-    .player-title {
         background-color: white;
         position: absolute;
         display: flex;
@@ -60,14 +64,30 @@
         width: 950px;
         height:250px ;
         top: 370px;
-        box-shadow:4px 4px 20px black;
-        
+        box-shadow: 7px 0px 20px rgba(255, 255, 255, 0.25)
+    }
+    
+    .player-title {
+        background-color: #DFDFDF;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 7em auto;
+        width: 850px;
+        height: 270px;
+        padding: 10px;
     }
     
     .player-image {
-        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-self: flex-start;
         width: 260px;
         height: 260px;
+        background-color:#2B2B31;
+        margin-top: -10%;
+        box-shadow: 3px 20px 20px rgba(0, 0, 0, 0.3)  
         background-color: yellow;
     }
     
@@ -86,8 +106,21 @@
         margin: auto;
         padding: 1em;
         font-size: 18px;
-        color: white;
-        
+        color: white;  
     }
-
-</style>
+    
+    .player-buttons {
+       margin: 70 -80 0 80;
+    }
+    
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-size:80px;
+        font-style: normal;
+        color:#2B2B31;
+        display: inline-block;
+        letter-spacing: 1em;
+    }
+    
+    </style>
