@@ -68,7 +68,7 @@
         position: absolute;
         width: 260px;
         height: 260px;
-        background-color: yellow;
+        background-color: pink;
     }
     
     .discription {
