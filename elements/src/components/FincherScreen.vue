@@ -12,6 +12,7 @@
         <div class="fincher__selected-screen">
           <video controls
             class="fincher__selected-screen--video">
+            <source src="../assets/videos/Fincher/FClubOne.mp4" type="video/mp4">
           </video>
         </div>
         <div class="fincher__selected-palette">
@@ -49,6 +50,7 @@ export default {
   data() {
     return {
       selectedPallete: {
+        video: '../assets/videos/Fincher/FClubOne.mp4',
         colors: [
           '#677645',
           '#D2DDAB',
@@ -60,6 +62,7 @@ export default {
       //TO DO: change all the colours plz//
       palettes: [
         {
+         video: '../assets/videos/Fincher/FClubTwo.mp4',
           colors: [
             '#70714C',
             '#A4A06F',
