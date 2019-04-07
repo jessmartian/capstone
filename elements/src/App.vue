@@ -11,6 +11,9 @@
         <template v-else-if="wrightScreen">
           <WrightScreen></WrightScreen>
         </template>
+        <template v-else-if="tarantinoScreen">
+          <TarantinoScreen></TarantinoScreen>
+        </template>
       </div>
     </div>
     <div class="sidebar-container">
@@ -24,7 +27,7 @@ import Intro from './components/Intro.vue';
 import Sidebar from './components/Sidebar.vue';
 import FincherScreen from './components/FincherScreen.vue';
 import WrightScreen from './components/WrightScreen.vue';
-
+import TarantinoScreen from './components/TarantinoScreen.vue';
 
 export default {
   name: 'app',
@@ -33,6 +36,7 @@ export default {
     Sidebar,
     FincherScreen,
     WrightScreen,
+    TarantinoScreen
   },
   data() {
     return {
