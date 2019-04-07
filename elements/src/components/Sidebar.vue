@@ -39,7 +39,7 @@ export default {
     justify-content: center; 
   }
   .sidebar {
-    display: flex; 
+    display: flex;
     justify-content: space-evenly;
     &-item {
       cursor: pointer;

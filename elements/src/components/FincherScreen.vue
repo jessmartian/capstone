@@ -5,14 +5,12 @@
     </div>
     <div class="fincher__container">
       <div class="fincher__description">
-        <div class="fincher__description-title">Zodiac</div>
-        <div class="fincher__description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a fermentum magna. Suspendisse vitae ligula vitae diam imperdiet finibus. Integer interdum, dolor non pellentesque elementum, nulla mi commodo mauris, id tincidunt lectus dolor sit amet turpis. Donec diam mi, aliquam id v estibulum id, posuere eu tortor.</div>
+        <div class="fincher__description-title">{{ selectedPallete.movieName }}</div>
+        <div class="fincher__description-body">{{ selectedPallete.key}}</div>
       </div>
       <div class="fincher__selected">
         <div class="fincher__selected-screen">
-          <video controls
-            class="fincher__selected-screen--video">
-          </video>
+          <video controls :src="selectedPallete.video"></video>
         </div>
         <div class="fincher__selected-palette">
           <div v-for="color in selectedPallete.colors"
@@ -41,14 +39,12 @@
 <script>
 export default {
   name: 'FincherScreen',
-  computed: {
-    video() {
-      return this.selectedPallete.video;
-    },
-  },
   data() {
     return {
       selectedPallete: {
+        key: 0,
+        description: 'blahhghh',
+        movieName: 'The Social Network',
         colors: [
           '#677645',
           '#D2DDAB',
@@ -57,9 +53,12 @@ export default {
           '#58543A',
         ],
       },
-      //TO DO: change all the colours plz//
       palettes: [
         {
+          key: 1,
+          description: 'blah',
+          movieName: 'Fight Club',
+          video: '../src/assets/Fincher/ZKOne.mp4',
           colors: [
             '#70714C',
             '#A4A06F',
@@ -69,7 +68,10 @@ export default {
           ],
         },
         {
-          video: 'source of video here1',
+          key: 2,
+          description: 'blahhh',
+          movieName: 'Zodiac',
+          video: '../src/assets/Fincher/ZKOne.mp4',
           colors: [
             '#0D313F',
             '#004E5E',
@@ -79,7 +81,10 @@ export default {
           ],
         },
         {
-          video: 'source of video here1',
+          key: 3,
+          description: 'bllllah',
+          movieName: 'The Social Network',
+          video: '../src/assets/Fincher/TSNTwo.mp4',
           colors: [
             '#2B365D',
             '#B9B906',
@@ -89,7 +94,10 @@ export default {
           ],
         },
         {
-          video: 'source of video here1',
+          key: 4,
+          description: 'blaaaah',
+          movieName: 'Fight Club',
+          video: '../src/assets/Fincher/FCTwo.mp4',
           colors: [
             '#677645',
             '#D2DDAB',
@@ -99,6 +107,16 @@ export default {
           ],
         },
       ],
+      video: {
+        sources: [{
+                  src: 'http://www.808.dk/vstreamer.asp?video=gizmo.mp4',
+                  type: 'video/mp4'
+        }],
+        options: {
+                  autoplay: true,
+                  volume: 0.6,
+                }
+      }
     };
   },
   methods: {

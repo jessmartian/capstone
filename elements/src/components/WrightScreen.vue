@@ -54,43 +54,43 @@
           {
             songTitle: 'Alabama Song',
             movieName: 'The World\'s End',
-            videoSource: 'src',
+            videoSource: '../src/assets/Wright/TWEOne.mp4',
             description: 'Editing music to the beat of action. This is effective for progressing the storyline further by condensing time to almost a montage as well as incorporating additional comedic relief. '
           },
           {
             songTitle: 'The Twins',
             movieName: 'Scott Pilgram VS the World',
-            videoSource: 'src',
+            videoSource: '../src/assets/Wright/SPOne.mp4',
             description: 'A great example of how he incorporates the sound effects of video games within the film and a play on of puns within the film. The scene is ultimately a battle of sound and music. '
           },
           {
             songTitle: 'Sound Effect Compilation',
             movieName: 'Varity',
-            videoSource: 'src',
+            videoSource: '../src/assets/Wright/SEffectComp.mp4',
             description: 'blah'
           },
           {
             songTitle: 'Oblivious to the Zombies',
             movieName: 'Shaun of the Dead',
-            videoSource: 'src',
+            videoSource: '../src/assets/Wright/SotDOne.mp4',
             description: 'blah'
           },
           {
             songTitle: 'Opening Sequence',
             movieName: 'Baby Driver',
-            videoSource: 'src',
+            videoSource: '../src/assets/Wright/BBDriver.mp4',
             description: 'This is a compilation of jump-cuts and sound effects. The jump-cuts, as stated, are a cut that jumps in time, certain actions are shows to progress the story along but also provides important images, when editing his jump cuts the sounds are amplified to show the importance but also creates a comedic aspect that would appeal to the audience. '
           },
           {
             songTitle: 'Sea Mine',
             movieName: 'Hot Fuzz',
-            videoSource: 'src',
+            videoSource: '../src/assets/Wright/HotFuzz.mp4',
             description: 'blah'
           },
           {
             songTitle: 'Don\'t Stop Me Now',
             movieName: 'Shaun of the Dead',
-            videoSource: 'src',
+            videoSource: '../src/assets/Wright/SotDTwo.mp4',
             description: 'blah'
           },
         ]

@@ -5,9 +5,8 @@
           <div class="tarantino-screen">
           </div>
           <div class="title">
-            <div class="title-name">{{ title }}</div>
-            <div class="title-shot"> Extreme Close-Up
-            </div>
+            <div class="title-name">{{ current.movieName }}</div>
+            <div class="title-shot">{{ current.cameraShot }}</div>
           </div>
           <input type="range" min="1" max="100" class="slider" v-model="shotSlider">
           <div class="description">
@@ -23,31 +22,66 @@
     data() {
       return {
         shotSlider: 0,
-        title: null,
+        currentIndex: 0,
         items: [
           {
-            movieName: 'movieName',
-            cameraShot: 'cameraShot',
+            movieName: 'naaame',
+            cameraShot: 'Extreme Close up',
+            description: 'blah',
+            video: 'video source'
+          },
+          {
+            movieName: 'name name',
+            cameraShot: 'Trunk Angle',
+            description: 'blah',
+            video: 'video source'
+          },
+          {
+            movieName: 'nameeee',
+            cameraShot: 'Medium Shot',
+            description: 'dblah',
+            video: 'video source'
+          },
+          {
+            movieName: 'nameezz',
+            cameraShot: 'Long Wide Shot',
+            description: 'blah',
+            video: 'video source'
+          },
+          {
+            movieName: 'naame',
+            cameraShot: 'Long Wide',
+            description: 'blah',
+            video: 'video source'
+          },
+          {
+            movieName: 'namey',
+            cameraShot: 'Extreme Wide shot',
             description: 'description',
             video: 'video source'
-          }
+          },
         ]
+      }
+    },
+    computed: {
+      current() {
+        return this.items[this.currentIndex]
       }
     },
     watch: {
       shotSlider() {
         if (this.shotSlider >= 0 && this.shotSlider <= 16) {
-          this.title = 'First Video'
+          this.currentIndex = 0
         } else if (this.shotSlider > 16 && this.shotSlider < 32) {
-          this.title = 'Second Video'
+          this.currentIndex = 1
         } else if (this.shotSlider > 32 && this.shotSlider < 48) {
-          this.title = 'Third Video'
+          this.currentIndex = 2
         } else if (this.shotSlider > 48 && this.shotSlider < 64) {
-          this.title = 'Fourth Video'
+          this.currentIndex = 3
         } else if (this.shotSlider > 64 && this.shotSlider < 80) {
-          this.title = 'Fifth Video'
+          this.currentIndex = 4
         } else if (this.shotSlider > 80 && this.shotSlider <= 100) {
-          this.title = 'Sixth Video'
+          this.currentIndex = 5
         }
       }
     },
@@ -104,7 +138,7 @@
   .title-shot {
     line-height: 1;
 		font-weight: bold;
-    font-size: 32px;
+    font-size: 28px;
     color: #ffffff;
     padding-left: 65%;
   }
@@ -118,7 +152,7 @@
     width: 50%;
     display: flex;
     margin: auto;
-    padding: 1em;
+    padding: 2em;
     font-size: 18px;
     color: white;
     text-align:center;
