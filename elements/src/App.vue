@@ -8,6 +8,9 @@
         <template v-else-if="fincherScreen">
           <FincherScreen></FincherScreen>
         </template>
+        <template v-else-if="wrightScreen">
+          <WrightScreen></WrightScreen>
+        </template>
       </div>
     </div>
     <div class="sidebar-container">
@@ -20,13 +23,16 @@
 import Intro from './components/Intro.vue';
 import Sidebar from './components/Sidebar.vue';
 import FincherScreen from './components/FincherScreen.vue';
+import WrightScreen from './components/WrightScreen.vue';
+
 
 export default {
   name: 'app',
   components: {
     Intro,
     Sidebar,
-    FincherScreen
+    FincherScreen,
+    WrightScreen,
   },
   data() {
     return {
