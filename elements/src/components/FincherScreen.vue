@@ -6,7 +6,7 @@
     <div class="fincher__container">
       <div class="fincher__description">
         <div class="fincher__description-title">{{ selectedPallete.movieName }}</div>
-        <div class="fincher__description-body">{{ selectedPallete.key}}</div>
+        <div class="fincher__description-body">{{ selectedPallete.description}}</div>
       </div>
       <div class="fincher__selected">
         <div class="fincher__selected-screen">
@@ -43,8 +43,8 @@ export default {
     return {
       selectedPallete: {
         key: 0,
-        description: 'blahhghh',
-        movieName: 'The Social Network',
+        description: 'Fincher uses monochromatic colours to convey the ridged worldviews of unbalanced characters',
+        movieName: 'Fight Club',
         colors: [
           '#677645',
           '#D2DDAB',
@@ -56,9 +56,9 @@ export default {
       palettes: [
         {
           key: 1,
-          description: 'blah',
-          movieName: 'Fight Club',
-          video: '../src/assets/Fincher/ZKOne.mp4',
+          description: 'Discordant colours of the prison jumpsuits are used to draw the attention to out-of-place elements to build anticipation and portray the importance of the items',
+          movieName: 'Se7en',
+          video: '',
           colors: [
             '#70714C',
             '#A4A06F',
@@ -69,9 +69,9 @@ export default {
         },
         {
           key: 2,
-          description: 'blahhh',
-          movieName: 'Zodiac',
-          video: '../src/assets/Fincher/ZKOne.mp4',
+          description: 'The contrasting colours of blue and yellow represent conflict both inside and out. The night sky, city buildings and the characters clothes represent a dark, midnight blue, a calm and mysterious representation of what is to come. The yellow of the explosions represent the breaking of stability, of not only the buildings outside but possibility of the characters too. ',
+          movieName: 'Fight Club',
+          video: '',
           colors: [
             '#0D313F',
             '#004E5E',
@@ -82,9 +82,9 @@ export default {
         },
         {
           key: 3,
-          description: 'bllllah',
+          description: 'We see Fincher use the discord of blue and yellow to represent the contrast and argument between two characters in this scene, this is ultimately two opposing sides of the characters and the set',
           movieName: 'The Social Network',
-          video: '../src/assets/Fincher/TSNTwo.mp4',
+          video: '../src/assets/TSNTwo.mp4',
           colors: [
             '#2B365D',
             '#B9B906',
@@ -95,22 +95,22 @@ export default {
         },
         {
           key: 4,
-          description: 'blaaaah',
-          movieName: 'Fight Club',
-          video: '../src/assets/Fincher/FCTwo.mp4',
+          description: 'Discordant colours such as the blue and brown nature landscape is used to draw the attention to out-of-place elements such as the black hooded man to build anticipation and portray the importance of the items',
+          movieName: 'Zodiac',
+          video: '',
           colors: [
-            '#677645',
-            '#D2DDAB',
-            '#8C8B7E',
-            '#A3A176',
-            '#58543A',
+            '#291F0F',
+            '#0E0800',
+            '#D7D2C5',
+            '#537C72',
+            '#AA7D47',
           ],
         },
       ],
       video: {
         sources: [{
-                  src: 'http://www.808.dk/vstreamer.asp?video=gizmo.mp4',
-                  type: 'video/mp4'
+                  src: '',
+                  type: 'video/.mp4'
         }],
         options: {
                   autoplay: true,
