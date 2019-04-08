@@ -10,7 +10,6 @@
       </div>
       <div class="fincher__selected">
         <div class="fincher__selected-screen">
-          <video controls :src="selectedPallete.video"></video>
         </div>
         <div class="fincher__selected-palette">
           <div v-for="color in selectedPallete.colors"
@@ -58,7 +57,7 @@ export default {
           key: 1,
           description: 'Discordant colours of the prison jumpsuits are used to draw the attention to out-of-place elements to build anticipation and portray the importance of the items',
           movieName: 'Se7en',
-          video: '',
+          video: './assets/Seven.mp4',
           colors: [
             '#70714C',
             '#A4A06F',

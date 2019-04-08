@@ -3,7 +3,7 @@
     <div class="intro-box">
       <div class="intro__title">Elements</div>
       <div class="intro__description">
-        A showcase of a director’s trademark style through elements of film.
+        A Showcase of Directorial Trademarks.
       </div>
     </div>
     <div class="intro__credit">
