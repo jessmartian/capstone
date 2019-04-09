@@ -10,7 +10,7 @@
           </div>
           <input type="range" min="1" max="100" class="slider" v-model="shotSlider">
           <div class="description">
-            <div class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a fermentum magna. Suspendisse vitae ligula vitae diam imperdiet finibus. Integer interdum, dolor non pellentesque elementum, nulla mi commodo mauris, id tincidunt lectus dolor sit amet turpis. Donec diam mi, aliquam id v estibulum id, posuere eu tortor.</div>
+            <div class="description-body">{{ current.description }}</div>
           </div>
         </div>
     </div>
@@ -25,39 +25,39 @@
         currentIndex: 0,
         items: [
           {
-            movieName: 'naaame',
+            movieName: 'Kill Bill: Vol. 1 (2003)',
             cameraShot: 'Extreme Close up',
-            description: 'blah',
+            description: 'Tarantino dives in close to show an audience detail on what is important. With his unnerving foot fetish, this “big toe” scene creates a style of tension and suspense that leads up to the extreme close-up shot These close shots are meant to reveal more about a character then an audience could just grasp from dialogue.',
             video: 'video source'
           },
           {
-            movieName: 'name name',
-            cameraShot: 'Trunk Angle',
-            description: 'blah',
+            movieName: 'Django Unchained (2012)',
+            cameraShot: 'Crash Zooms',
+            description: 'A “Crash Zoom” also known as a snap zoom, is a sudden, rapid zoom in on an object or person. As you see in Django Unchained, the intense effect heightens the drama around any moment. ',
             video: 'video source'
           },
           {
-            movieName: 'nameeee',
-            cameraShot: 'Medium Shot',
-            description: 'dblah',
+            movieName: 'Trunk Compilation',
+            cameraShot: 'Low Angle',
+            description: 'The absolute trademark of Tarantino is his trunk shot camera angle, his use of it in every movie is for the audience to feel as if they are right there with the characters. The claustrophobic feeling of the “trunk technique” ensures the audience will be. He also uses reverse trunk shots with characters being watched from outside the trunk.',
             video: 'video source'
           },
           {
-            movieName: 'nameezz',
-            cameraShot: 'Long Wide Shot',
-            description: 'blah',
+            movieName: 'Reservoir Dogs (1992)',
+            cameraShot: 'Staged Wide Shot',
+            description: 'This shot is mainly used when a director wants the audience to appreciate the full scope of a subject’s predicament within those surroundings. In the case of the Mexican Standoff, the audience can see that each character has full range of shooting each other within an empty space. The audience is directed to the actions of the characters rather than the environment.  ',
             video: 'video source'
           },
           {
-            movieName: 'naame',
-            cameraShot: 'Long Wide',
-            description: 'blah',
+            movieName: 'Jackie Brown (1997)',
+            cameraShot: 'Tracking Long Shot',
+            description: 'Tarantino uses these shots to stay with the same character or characters for several minutes as they perform actions or interact with each other. The opening sequence follows the character of Jackie, as she makes her way towards her workplace, only rushing towards the end when she realizes she is late. ',
             video: 'video source'
           },
           {
-            movieName: 'namey',
-            cameraShot: 'Extreme Wide shot',
-            description: 'description',
+            movieName: 'The Hateful Eight (2015)',
+            cameraShot: 'Establishing Location Shot',
+            description: 'As Tarantino likes to keep things up-close and personal, he still has a stylistic eye when showing a location establishing shot. The establishing shots provide the audience where and when the next scene will occur. In Tarantino’s case, he frequently uses these shots when characters are telling a story or a flashback is taking place. ',
             video: 'video source'
           },
         ]

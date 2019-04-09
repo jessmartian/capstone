@@ -42,8 +42,8 @@ export default {
     return {
       selectedPallete: {
         key: 0,
-        description: 'Fincher uses monochromatic colours to convey the ridged worldviews of unbalanced characters',
-        movieName: 'Fight Club',
+        description: 'Fincher wants the audience to feel the same way as the characters do. A monochromatic colour palette provides a heightened emotional weight within a scene because it gives a better idea of the past and current state of the characters. In this case, the colors of the apartment convey the ridged worldviews of an unbalanced character',
+        movieName: 'Fight Club (1999)',
         colors: [
           '#677645',
           '#D2DDAB',
@@ -55,8 +55,8 @@ export default {
       palettes: [
         {
           key: 1,
-          description: 'Discordant colours of the prison jumpsuits are used to draw the attention to out-of-place elements to build anticipation and portray the importance of the items',
-          movieName: 'Se7en',
+          description: 'Discordant colours are not complimentary colours but they do evoke the same energy that makes them ideal for enhancing suspense. The orange of the prison jumpsuit and the dark tones of the detectives add for a jarring and unnerving scene. They are also used to draw the attention to out-of-place elements to build anticipation and portray the importance of the items.',
+          movieName: 'Se7en (1995)',
           video: './assets/Seven.mp4',
           colors: [
             '#70714C',
@@ -68,7 +68,7 @@ export default {
         },
         {
           key: 2,
-          description: 'The contrasting colours of blue and yellow represent conflict both inside and out. The night sky, city buildings and the characters clothes represent a dark, midnight blue, a calm and mysterious representation of what is to come. The yellow of the explosions represent the breaking of stability, of not only the buildings outside but possibility of the characters too. ',
+          description: 'For Fincher, everything in a shot is an extension of the characters and should reflect their dilemmas. In the final scene of Fight Club, the characters stand side by side in blush blue light. The sudden explosions of orange illustrate not only the danger of the moment, but the uncertainty of their shared future. The blue and orange palette choice is meant to represent conflict existing both in the minds of the characters and the locations containing them.',
           movieName: 'Fight Club',
           video: '',
           colors: [
@@ -81,8 +81,8 @@ export default {
         },
         {
           key: 3,
-          description: 'We see Fincher use the discord of blue and yellow to represent the contrast and argument between two characters in this scene, this is ultimately two opposing sides of the characters and the set',
-          movieName: 'The Social Network',
+          description: 'Fincher’s films frequently use a form of conflict in a complex and unexpected manner. Instead of using just the internal and external forces of the characters. Fincher utilizes the environment’s color palettes to express conflict as well. In this case, we see the two opposing contrasting sides of the characters arguing through their dialogue and through the set.',
+          movieName: 'The Social Network (2010)',
           video: '../src/assets/TSNTwo.mp4',
           colors: [
             '#2B365D',
@@ -95,7 +95,7 @@ export default {
         {
           key: 4,
           description: 'Discordant colours such as the blue and brown nature landscape is used to draw the attention to out-of-place elements such as the black hooded man to build anticipation and portray the importance of the items',
-          movieName: 'Zodiac',
+          movieName: 'Zodiac (2007)',
           video: '',
           colors: [
             '#291F0F',
@@ -151,7 +151,7 @@ export default {
     text-align: left;
     &-title {
       font-size: 36px;
-      margin-bottom: 2em;
+      margin-bottom: 1em;
     }
     &-body {
       font-size: 16px;
